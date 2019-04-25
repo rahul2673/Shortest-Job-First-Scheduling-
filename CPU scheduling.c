@@ -7,11 +7,11 @@ Priority = 1+ Waiting time / Estimated run time
 Using the data given below compute the waiting time and turnaround time for each process and average waiting time and average turnaround
 time.
 
-Process	Arrival time	Burst time
-P1	       0	         20
-P2	       5	         36
-P3	      13	         19
-P4	      17	         42
+Process	 Arrival  time	Burst time
+P1	        0	         20
+P2	        5	         36
+P3	       13	         19
+P4	       17	         42
 */
 #include<conio.h>
 #include<stdio.h>
@@ -44,8 +44,8 @@ p1_list[r] = p;
  }  
  void Sorting2()
  {
-struct process p;
-int q, r;
+    struct process p;
+    int q, r;
 for(q=0;q<n-1;q++)
 {
 for(r=q+1;r<n;r++)
@@ -114,8 +114,7 @@ printf("PNO\tAT\tCT\tTA\tWTt\t Priority\n");
 for(i=0;i<n;i++)
 {
 printf("P%d\t%d\t%d\t%d\t%d\t%d\n",p1_list[i].p_no,p1_list[i].arrival_time,p1_list[i].ctime,p1_list[i].taround_time
-,p1_list[i].wait_time1,p1_list[i].priority);
- }
+,p1_list[i].wait_time1,p1_list[i].priority);}
 printf("Average Turn around Time: %f\t\n\n",avg_taround_time1);
 printf("Average Waiting Time :\t %f\t\n",avg_w_t1);
 Sorting2();
