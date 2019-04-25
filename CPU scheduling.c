@@ -1,19 +1,17 @@
 /*
 Consider a scheduling approach which is non pre-emptive similar to shortest job next in nature. The priority of each job is dependent on
-its estimated run time, and also the amount of time it has spent waiting. 
-Jobs gain higher priority the longer they wait, which prevents
-indefinite postponement. 
-The jobs that have spent a long time waiting compete against those estimated to have short run times. 
+its estimated run time, and also the amount of time it has spent waiting. Jobs gain higher priority the longer they wait, which prevents
+indefinite postponement. The jobs that have spent a long time waiting compete against those estimated to have short run times. 
 The priority can be computed as :
 Priority = 1+ Waiting time / Estimated run time
 Using the data given below compute the waiting time and turnaround time for each process and average waiting time and average turnaround
 time.
 
 Process	 Arrival  time	Burst time
-P1	        0	         20
-P2	        5	         36
-P3	       13	         19
-P4	       17	         42
+ P1	        0	         20
+ P2	        5	         36
+ P3	       13	         19
+ P4	       17	         42
 */
 #include<conio.h>
 #include<stdio.h>
@@ -126,7 +124,7 @@ for(i=0;i<n;i++)
 printf("P%d\t%d\t%d\t%d\t%d\t%d\n",p1_list[i].p_no,p1_list[i].arrival_time,p1_list[i].ctime,p1_list[i].taround_time
 ,p1_list[i].wait_time1,p1_list[i].priority);
 }
-printf("\n\n thus the process are listed in terms of priority in descending order");
+printf("\n\n therefore the process are listed in terms of priority in descending order");
 printf("\n therefore the process with higher priority will be executed first than the process with lowest priority.");
 return 0;
 }
